@@ -1,0 +1,156 @@
+
+
+
+<app-header></app-header>
+
+<main>
+
+    <ng-container *ngFor="let item of section; let index = index ">
+    
+      <section>
+          <h2>{{ item.title}}</h2>
+          <p>{{ item.description}}</p>
+          <div [ngSwitch]="index">
+            <div *ngSwitchCase="0">
+              <ng-container *ngTemplateOutlet="listCryptos">
+
+              </ng-container>
+            </div>
+            <div *ngSwitchCase="1">
+              <ng-container *ngTemplateOutlet="infos"></ng-container>
+            </div>
+            <div *ngSwitchCase="2">
+              <ng-container *ngTemplateOutlet="possibility"></ng-container>
+            </div>
+            <div *ngSwitchCase="3">
+              <ng-container *ngTemplateOutlet="medias; context: {section: item}"></ng-container>
+            </div>
+            <div *ngSwitchCase="4">
+              <ng-container *ngTemplateOutlet="optionsList; context: {section: item}" >
+              </ng-container>
+            </div>
+            <div *ngSwitchCase="5">
+              <ng-container *ngTemplateOutlet="more"></ng-container>
+            </div>
+
+          </div>
+       
+          
+      </section>
+
+    </ng-container>
+
+
+</main>
+
+<div class="callToAction">
+  <h3>Commencez à investir dans les cryptomonnaies maintenant !</h3>
+  <a href="">S'inscrire maintenant</a>
+</div>
+
+<div class="advice">
+    <p>{{advice}}</p>
+</div>
+
+
+  <div class="footer_previous">
+        <section *ngFor="let detail of footer_detail">
+          <h3>{{detail.title}}</h3>
+                 
+              <ul>
+                  <li *ngFor="let item of detail.list">{{item}}</li>
+              </ul>
+
+       </section>
+
+      </div>
+
+  <app-footer></app-footer>
+
+
+  <ng-template #listCryptos>
+
+
+    <h2>Cryptos</h2>
+
+  </ng-template>
+
+  <ng-template #infos>
+
+
+    <h2>infos</h2>
+
+  </ng-template>
+
+
+
+  <ng-template #possibility>
+
+    <div class="mainPossibility">
+
+    <app-possibility *ngFor="let poss of possibilities" [possibilityItem]="poss">
+
+    </app-possibility>
+  </div>
+
+  </ng-template>
+
+  <ng-template #medias let-section="section">
+
+    <div class="mainMedias">
+
+
+      <!-- <div class="optionContent"> -->
+<!--   
+        <ng-container *ngFor="let option of options" >
+  
+          <app-options [optionItem]="option"></app-options>
+  
+        </ng-container> -->
+  
+    </div>
+    <img src={{section.imageURL}} alt="" style="width: 300px; height: 200px">
+  </ng-template>
+
+
+
+
+  <ng-template #optionsList let-section="section">
+
+    <div class="mainOptions">
+
+
+    <div class="optionContent">
+
+      <ng-container *ngFor="let option of options" >
+
+        <app-options [optionItem]="option"></app-options>
+
+      </ng-container>
+
+  </div>
+  <img src={{section.imageURL}} alt="" style="width: 300px; height: 200px">
+</div>
+    
+  </ng-template>
+
+
+
+  <ng-template #more>
+
+
+    <div class="moreContent">
+
+      <ng-container *ngFor="let more of mores" >
+
+        <app-more [moreItem]="more"></app-more>
+
+      </ng-container>
+
+  </div>
+    
+
+
+  </ng-template>
+  
+  

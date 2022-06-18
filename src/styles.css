@@ -1,0 +1,173 @@
+/* You can add global styles to this file, and also import other style files */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 0.625rem;
+  min-height: 100vh;
+}
+
+:root {
+  --ax-bg-primary: rgba(250,250,250,1);
+  --ax-bg-button: rgba(252,213,53,1);
+  --ax-color-button: rgba(24,26,32,1);
+  --ax-color-href: rgba(201,148,0,1);
+  --ax-color-hover: rgba(240,185,11,1);
+  --ax-color-primary: rgba(30,35,41,1);
+  --ax-color-accent: rgba(71,77,87,1);
+  --ax-color-secondary: rgba(112,122,138,1);
+  --ax-fontSize-title: 4rem;
+  --ax-fontSize-text-title: 2rem;
+  --ax-fontSize-subtitle: 2.4rem;
+  --ax-fontSize-text: 1.6rem;
+  --ax-fontSize-detail: 1.4rem;
+  --ax-fontSize-h1: 5.6rem;
+  --ax-fontSize-svg: 1.8rem;
+}
+
+.ax-bg-primary {
+  background-color: var(--ax-bg-primary);
+}
+
+.ax-bg-button {
+  background-color: var(--ax-bg-button);
+}
+
+.ax-color-hover {
+  color: var(--ax-color-hover);
+}
+
+.ax-color-button {
+  color: var(--ax-color-button);
+}
+
+.ax-color-href {
+  color: var(--ax-color-href);
+}
+
+.ax-color-primary {
+  color: var(--ax-color-primary);
+}
+
+.ax-color-accent {
+  color: var(--ax-color-accent);
+}
+
+.ax-color-secondary {
+  color: var(--ax-color-secondary);
+}
+
+.ax-fontSize-title {
+  font-size: var(--ax-fontSize-title);
+}
+
+.ax-fontSize-subtitle {
+  font-size: var(--ax-fontSize-subtitle);
+}
+
+.ax-fontSize-text-title {
+  font-size: var(--ax-fontSize-text-title);
+}
+
+.ax-fontSize-text {
+  font-size: var(--ax-fontSize-text);
+}
+
+.ax-fontSize-detail {
+  font-size: var(--ax-fontSize-detail);
+}
+
+.ax-fontSize-svg {
+  font-size: var(--ax-fontSize-svg);
+}
+
+.ax-fontSize-h1 {
+  font-size: var(--ax-fontSize-h1);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  width: 100%;
+  height: 300px;
+}
+
+.footer_previous {
+  display: flex;
+}
+
+footer {
+  text-align: center;
+}
+
+.moreContent, .optionContent, .mainPossibility {
+  display: flex;
+}
+
+.optionContent {
+  flex-direction: column;
+}
+
+.mainOptions {
+  display: flex;
+}
