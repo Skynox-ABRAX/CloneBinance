@@ -1,4 +1,39 @@
+:host{
+    display: block;
+    max-width: 33.33%;
+    padding: 16px 12px;
+    background-color: var(--ax-bg-primary);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+:host:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+img{
+    width: 100%;
+}
+
+
 .mediaObject{
     display: flex;
     flex-direction: column;
+    row-gap: 48px;
+    word-wrap: break-word;
+    padding: 40px 24px;
+
+    & h2{
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 16px;
+
+    }
+
+    & p{
+        color: var(--ax-color-accent);
+        font-size: 16px;
+        line-height: 24px;
+    }
 }
+

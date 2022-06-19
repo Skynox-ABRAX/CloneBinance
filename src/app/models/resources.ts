@@ -31,11 +31,12 @@ export const section_header= [
     {
         imageUrl: '',
         title: 'Cryptomonnaies populaires',
-        description: ''
+        description: '',
+        link: 'Voir plus de marchés'
 
     },
     {
-        imageUrl: '',
+        imageUrl: '/assets/img/portfolio-section.png',
         title: 'Constituez votre portefeuille de cryptomonnaies',
         description: 'Démarrez votre premier trade de cryptomonnaies en suivant les étapes ci-dessous.'
 
@@ -43,25 +44,30 @@ export const section_header= [
     {
         imageUrl: '',
         title: 'Explorez des possibilités infinies avec Binance',
-        description: ''
+        description: '',
+        link: ''
 
     },
     {
         imageUrl: '/assets/img/download-section.png',
         title: 'Tradez où que vous soyez et  quand vous le souhaitez.',
-        description: 'Tenez-vous informé grâce à notre application et à notre client de bureau.'
+        description: 'Tenez-vous informé grâce à notre application et à notre client de bureau.',
+        link: 'Plus d\'options de téléchargement'
 
     },
     {
         imageUrl: '/assets/img/trusted-section.png',
         title: 'La plateforme d\'échange de cryptomonnaies sur laquelle vous pouvez compter',
-        description: 'Chez Binance, nous nous engageons à protéger nos utilisateurs grâce à des protocoles de sécurité de pointe.'
+        description: 'Chez Binance, nous nous engageons à protéger nos utilisateurs grâce à des protocoles de sécurité de pointe.',
+        link: 'En savoir plus'
 
     },
     {
         imageUrl: '',
         title: 'Besoin d\'aide ?',
-        description: ''
+        description: '',
+        link: ''
+
 
     },
 
@@ -69,9 +75,9 @@ export const section_header= [
 
 
 
-export const cryptos =[
+export const crypto =[
     {
-        imageURL: '',
+        imageURL: '/assets/img/bnb.png',
         title: 'BNB',
         crypto: 'BNB',
         lastPrice: '€192.9',
@@ -80,7 +86,7 @@ export const cryptos =[
 
     },
     {
-        imageURL: '',
+        imageURL: '/assets/img/btc.png',
         title: 'Bitcoin',
         crypto: 'BTC',
         lastPrice: '€18 336',
@@ -89,7 +95,7 @@ export const cryptos =[
 
     },
     {
-        imageURL: '',
+        imageURL: '/assets/img/busd.png',
         title: 'BUSD',
         crypto: 'BUSD',
         lastPrice: '€0.954034',
@@ -98,7 +104,7 @@ export const cryptos =[
 
     },
     {
-        imageURL: '',
+        imageURL: '/assets/img/eth.png',
         title: 'Ethereum',
         crypto: 'ETH',
         lastPrice: '€956,8',
@@ -112,20 +118,20 @@ export const cryptos =[
 export const infos =[
 
     {
-        imageUrl: '',
+        imageUrl: '/assets/img/user.svg',
         title: 'Approvisionez votre compte',
         description: 'Ajoutez des fonds à l’aide de différents modes de paiement à votre compte Binance pour commencer à trader des cryptomonnaies.'
 
     },
 
     {
-        imageUrl:'',
+        imageUrl:'/assets/img/kyc.svg',
         title: 'Vérifiez votre identité',
         description: 'Complétez le processus de vérification d’identité pour sécuriser votre compte et vos transactions.'
 
     },
     {
-        imageUrl:'',
+        imageUrl:'/assets/img/spot.svg',
         title: 'Commencez à trader',
         description: 'Commencez à acheter, vendre et générer des intérêts avec les cryptomonnaies. Binance offre de multiples produits correspondants à tous les profilts d\'investisseurs.'
 

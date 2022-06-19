@@ -1,0 +1,9 @@
+:host {
+  display: block;
+  height: 84px;
+  margin: 32px auto;
+  max-width: 1200px;
+}
+:host p {
+  color: var(--ax-color-secondary);
+}

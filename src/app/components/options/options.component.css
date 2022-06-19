@@ -1,3 +1,23 @@
+:host {
+  margin-bottom: 64px;
+  padding-right: 24px;
+}
+:host .content {
+  margin-left: 40px;
+}
+:host h3 {
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+:host p {
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--ax-color-secondary);
+}
+
 .mediaObject {
   display: flex;
+  align-items: center;
 }

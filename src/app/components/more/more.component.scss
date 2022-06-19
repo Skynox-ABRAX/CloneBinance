@@ -1,3 +1,50 @@
+:host{
+    display: block;
+    padding: 24px;
+
+
+    & svg{
+        width: 18px;
+        height: 18px;
+        color: var(--ax-color-href);
+        margin-left: 8px;
+    }
+
+    & img{
+        width: 64px;
+        height: 64px;
+    }
+
+    & a {
+        text-decoration: none;
+        color: var(--ax-color-href);
+    }
+
+    & h3{
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 600;
+    }
+
+    & p {
+        margin-top: 8px;
+        color: var(--ax-color-secondary);
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    & .content{
+        margin-left: 24px;
+    }
+
+    & .link{
+        display: flex;
+        align-items: center;
+        margin-top: 16px;
+    }
+}
+
+
 .mediaObject{
     display: flex;
 }

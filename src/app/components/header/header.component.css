@@ -1,0 +1,106 @@
+:host {
+  font-size: 0.625rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+}
+
+ul, .choice {
+  display: flex;
+}
+
+.symbol {
+  position: absolute;
+  display: none;
+}
+
+.logoItem {
+  width: 120px;
+  height: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.logoItem path {
+  fill: var(--ax-color-hover);
+}
+
+.ax-title {
+  font-size: 14px;
+}
+
+.logoMenu {
+  font-size: 14px;
+}
+
+.choice {
+  flex-grow: 1;
+}
+
+.left, .right {
+  display: flex;
+}
+
+.left {
+  flex-grow: 1;
+}
+
+.left li, .right li {
+  display: flex;
+  color: var(--ax-color-primary);
+  margin: 8px;
+}
+
+.dropdown {
+  width: 18px;
+  height: 18px;
+}
+
+.menu {
+  display: flex;
+  margin: 0 8px;
+}
+
+.menu svg:first-of-type {
+  width: 24px;
+  height: 24px;
+}
+
+.dropdown use, menu .dropdown {
+  fill: #707a8a;
+  color: #707a8a;
+}
+
+.choice {
+  align-items: center;
+}
+
+.ax-cr {
+  position: relative;
+}
+
+.ax-cr::after {
+  content: "EUR";
+  position: absolute;
+  font-size: 12px;
+  padding-left: 5px;
+}
+
+.ax-title h3 {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.right {
+  margin-right: 0;
+}
+
+.logo-theme {
+  width: 18px;
+  height: 18px;
+  color: var(--ax-color-primary);
+}
+
+.logo-theme use {
+  fill: var(--ax-color-primary);
+}
