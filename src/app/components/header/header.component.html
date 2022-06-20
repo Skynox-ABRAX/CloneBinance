@@ -26,8 +26,15 @@
     <div class="left">
 
         <ul>
-            <li *ngFor="let item of header_left" class="ax-title">
+            <li *ngFor="let item of header_left; let i=index" class="ax-title">
                 <h3>{{item}}</h3>
+                <ng-container *ngIf="i===0">
+                    <span class="tag"> EUR </span>
+                </ng-container>
+                <ng-container *ngIf="i===2">
+                    <span class="tag"> New </span>
+                </ng-container>
+                
                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="dropdown">
                     <use xlink:href="#icon-h-dropdown-arrow"></use>
                 </svg>
@@ -38,14 +45,17 @@
 
     <div class="right">
     <ul>
-        <li *ngFor="let item of header_right">{{item}}</li>
+        <li *ngFor="let item of header_right; let index=index" [class.href]="(index === 1)">{{item}}</li>
     </ul>
 
 
     </div>
-    |
-    EUR
-    |
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="logo-theme"><use xlink:href="#mode-dark"></use></svg>
+    | &nbsp;
+    <span class="currency">EUR  &nbsp;</span>
+    |&nbsp;
+
+    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="logo-theme">
+        <use xlink:href="#mode-dark"></use>
+    </svg>
 
 </div>

@@ -15,12 +15,21 @@ img {
   width: 100%;
 }
 
+.order1 {
+  order: 1;
+}
+
+.order2 {
+  order: 2;
+}
+
 .mediaObject {
   display: flex;
   flex-direction: column;
-  row-gap: 48px;
   word-wrap: break-word;
   padding: 40px 24px;
+  height: 100%;
+  justify-content: space-between;
 }
 .mediaObject h2 {
   font-size: 24px;

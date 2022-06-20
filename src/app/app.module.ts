@@ -10,6 +10,7 @@ import { MoreComponent } from './components/more/more.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { InfosComponent } from './components/infos/infos.component';
 import { CryptoComponent } from './components/crypto/crypto.component';
+import { HtmlPipe } from './pipes/html.pipe';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { CryptoComponent } from './components/crypto/crypto.component';
     MoreComponent,
     FooterComponent,
     InfosComponent,
-    CryptoComponent
+    CryptoComponent,
+    HtmlPipe
   ],
   imports: [
     BrowserModule,

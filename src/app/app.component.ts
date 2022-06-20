@@ -37,7 +37,7 @@ export class AppComponent {
     this.footer_detail = footer_header.map( a => new footerItem(a.title, a.list));
     this.mores = more.map( a => new moreItem(a.imageURL, a.title, a.description, a.more));
     this.options = options.map( a => new optionItem(a.imageURL, a.title, a.description));
-    this.possibilities = possibility.map( a => new possibilityItem(a.imageURL, a.title, a.description));
+    this.possibilities = possibility.map( a => new possibilityItem(a.imageURL, a.title, a.description, a.order));
     this.heroes = hero.map( a => new heroItem(a.title, a.description));
     this.infos = infos.map( a => new infoItem(a.imageUrl, a.title, a.description));
     this.cryptos = crypto.map( a => new cryptoItem(a.imageURL, a.title, a.crypto, a.lastPrice, a.variation, a.capitalisation));

@@ -45,17 +45,27 @@ img{
     padding: 80px 0px;
 }
 
+.ax-hero-list{
+    column-gap: 80px;
+}
+
 .ax-hero-list h2{
     font-size: 32px;
     line-height: 48px;
     font-weight: 600;
     color: var(--ax-color-primary);
+    
+}
 
-    & p{
+.ax-hero-list p{
+
         font-size: 16px;
         line-height: 24px;
         color: var(--ax-color-primary);
-    }
+}
+
+.ax-hero-list li{
+    width: 25%;
 }
 
 
@@ -70,23 +80,36 @@ img{
     & button{
         background-color: var(--ax-bg-button);
         border: none;
-        padding: 16px 32px;
+        padding: 12px 32px;
         border-radius: 3px;
         margin-left: 16px;
         font-weight: 400;
         color: var(--ax-color-button);
+        font-size: 16px;
+        line-height: 24px;
+        cursor: pointer;
+        transition: background-color 200ms ease-in;
+
+        &:hover{
+            background-color: var(--ax-color-hover);
+            transition: background-color 200ms ease-in;
+        }
 
     }
 
     & input{
-        border: 1px solid var(--ax-color-secondary);
+        border: 1px solid rgb(183,189,198);
         border-radius: 3px;
         width: 282px;
         padding: 0 12px;
 
+        &:hover{
+            border: 1px solid var(--ax-color-hover);
+        }
+
 
         &::placeholder{
-            color: var(--ax-color-secondary);
+            color: rgb(199, 199, 199);
         }
     }   
 }
@@ -95,6 +118,7 @@ img{
 .ax-right-arrow{
     width: 18px;
     height: 18px;
+    align-self: flex-start;
 
 }
 
@@ -121,22 +145,34 @@ section h2{
 
 .header-section{
     display: flex;
-    margin-bottom: 64px;
+   /* margin-bottom: 64px;*/
     align-items: center;
 
     & h2{
         flex-grow: 1;
+        font-size: 40px;
+        line-height: 48px;
     }
+
+
 
     & a{
         text-decoration: none;
         color: var(--ax-color-secondary);
         font-size: 14px;
+        line-height: 20px;
     }
 
     & path{
         fill: var(--ax-color-secondary);
     }
+}
+
+.section-header-group p{
+    margin-top: 16px;
+    font-size: 20px;
+    line-height: 28px;
+    color: var(--ax-color-accent);
 }
 
 .cryptoContent{
@@ -150,6 +186,11 @@ section h2{
     padding: 16px;
     color: var(--ax-color-secondary);
 
+}
+
+.headerCrypto h1{
+    font-size: 14px;
+    line-height: 18px;
 }
 
 .headerCrypto > *{
@@ -191,6 +232,9 @@ section h2{
         padding: 12px 32px;
         background-color: var(--ax-bg-button);
         border-radius: 3px;
+        font-size: 14px;
+        line-height: 18px;
+        color: var(--ax-color-primary);
 
     }
 
@@ -244,6 +288,8 @@ section h2{
 
     & h3{
         color: var(--ax-color-secondary);
+        font-size: 16px;
+        line-height: 24px;
     }
 
     & h2{
@@ -403,6 +449,7 @@ section h2{
 .footer-previous-content section{
     display: flex;
     flex-direction: column;
+    padding-bottom: 16px;
 }
 
 .chat-container{
@@ -426,6 +473,58 @@ section h2{
         display: none;
     }
 
+}
+
+.header-section > * {
+    flex-grow: 1;
+}
+
+.header-section img 
+{
+    width: 335px;
+    margin: 0 135px;
+
+
+
+}
+
+.left-header-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: flex-start;
+
+     
+}
+
+.left-header-title{
+    display: flex;
+    width: 100%;
+    flex-grow: 1;
+    align-self: flex-start;
+    // align-items: center;
+}
+
+.section-header-group{
+    margin-bottom: 80px;
+    flex-grow: 1;
+}
+
+.infos-section-spec{
+    max-width: 50%;
+}
+
+.infos-header-spec > *{
+    flex: 1;
+}
+
+.infos-callToAction{
+    padding: 12px 48px;
+    background-color: var(--ax-bg-button);
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--ax-color-primary) !important;
+    border-radius: 5px;
 }
 
 

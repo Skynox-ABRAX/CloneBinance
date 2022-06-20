@@ -1,11 +1,11 @@
 export const header_left = ['Acheter des cryptos', 'Trader', 'NFT', 'Dérivés', 'Finance', 'Gagnez des cryptos'];
-export const header_right = ['Connexion', 'S\'inscrire', 'Téléchargements', 'Français (International)', 'Finance', 'Gagnez des cryptos'];
+export const header_right = ['Connexion', 'S\'inscrire', 'Téléchargements', 'Français (International)'];
 
 
 export const hero=[
 
     { 
-        title: '76 milliards $',
+        title: '76 milliards <br>$',
         description: 'Volume d’échanges sur 24 h sur la plateforme Binance'
     },
     
@@ -144,19 +144,21 @@ export const possibility =[
     {
         imageURL: '/assets/img/nft.png',
         title: 'Découvrez le monde des NFT',
-        description: 'Collectez des NFTs, ouvrez les boîtes mystères, explorez les IGO (Initial Game Offering), les Fan Tokens et bien plus encore avec Binance NFT.'
+        description: 'Collectez des NFTs, ouvrez les boîtes mystères, explorez les IGO (Initial Game Offering), les Fan Tokens et bien plus encore avec Binance NFT.',
+        order: 1
 
     },
     {
         imageURL: '/assets/img/binance-pay.png',
         title: 'Développez votre activité avec Binance Pay',
-        description: 'Touchez un plus grand nombre de clients en payant et en vous faisant payer en cryptomonnaies grâce à notre technologie de paiement disponible sur Binance Pay et Binance Marketplace.'
-
+        description: 'Touchez un plus grand nombre de clients en payant et en vous faisant payer en cryptomonnaies grâce à notre technologie de paiement disponible sur Binance Pay et Binance Marketplace.',
+        order: 2
     },
     {
         imageURL: '/assets/img/binance-earn.png',
         title: 'Binance Earn',
-        description: 'Conservez vos fonds en cryptomonnaies et commencez à investir.'
+        description: 'Conservez vos fonds en cryptomonnaies et commencez à investir.',
+        order: 1
     }
 
 ];

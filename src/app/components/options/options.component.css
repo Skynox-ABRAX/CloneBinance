@@ -13,7 +13,7 @@
 }
 :host p {
   font-size: 14px;
-  line-height: 18px;
+  line-height: 24px;
   color: var(--ax-color-secondary);
 }
 

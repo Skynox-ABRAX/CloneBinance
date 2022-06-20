@@ -1,11 +1,14 @@
 :host{
     display: block;
     height: 84px;
-    margin: 32px auto;
+    margin: 0 auto;
     max-width: 1200px;
 
     & p{
         color: var(--ax-color-secondary);
+        line-height: 84px;
+        font-size: 14px;
+        
     }
 
 }

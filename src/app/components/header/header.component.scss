@@ -8,6 +8,7 @@
 
 ul, .choice{
     display: flex;
+    align-items: center;
 }
 
 .symbol{
@@ -19,8 +20,10 @@ ul, .choice{
     width: 120px;
     height: 1.5rem;
     font-size: 1.5rem;
-
+    cursor: pointer;
 }
+
+
 
 .logoItem path{
     fill: var(--ax-color-hover);
@@ -51,6 +54,11 @@ ul, .choice{
     display: flex;
     color: var(--ax-color-primary);
     margin: 8px;
+    cursor: pointer;
+
+    &:hover{
+        color: var(--ax-color-hover);
+    }
 
 }
 
@@ -63,6 +71,7 @@ ul, .choice{
 .menu{
     display: flex;
     margin: 0 8px;
+    cursor: pointer;
 }
 
 .menu svg:first-of-type{
@@ -99,17 +108,71 @@ ul, .choice{
 }
 
 .right{
-    margin-right: 0;
+    margin-right: 8px;
+
+    & li{
+        font-size: 14px;
+        line-height: 20px;
+    }
 
 }
 
 .logo-theme{
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
     color: var(--ax-color-primary);
+    margin-right: 20px;
+    cursor: pointer;
 }
 
 .logo-theme use{
     fill: var(--ax-color-primary);
 
+}
+
+.logo-theme:hover use{
+    fill: var(--ax-bg-button);
+    color: var(--ax-bg-button);
+
+}
+
+
+
+.href{
+    background-color: var(--ax-bg-button);
+    border-radius: 5px;
+    line-height: 20px;
+    padding: 6px 12px;
+}
+
+.tag{
+    position: relative;
+    font-size: 10px;
+    align-self: center;
+    margin-left: 6px;
+    background-color: var(--ax-bg-button);
+    border-radius: 3px;
+    padding: 4px;
+}
+
+.tag::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    border: 3px solid var(--ax-bg-button);
+    display: inline-block;
+    transform: rotate(45deg) translate3d(-55%, 0,0);
+    z-index: -2;
+}
+
+.currency:hover{
+
+    color: var(--ax-bg-button);
+    cursor: pointer;
+}
+
+.ax-title:hover .dropdown, .menu:hover .dropdown{
+    transform: rotate(180deg);
+    cursor: pointer;
 }

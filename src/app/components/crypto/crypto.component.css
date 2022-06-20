@@ -8,19 +8,23 @@
 :host:hover {
   background-color: var(--ax-bg-primary);
 }
-:host > * {
-  justify-content: flex-start;
-}
 :host img {
   width: 28px;
   height: 28px;
+}
+:host h1 {
+  font-size: 16px;
+  line-height: 24px;
+}
+:host .title-part {
+  display: flex;
 }
 
 .title {
   display: flex;
   align-items: center;
   width: 120px;
-  flex-grow: 7;
+  flex-grow: 13;
 }
 .title h1 {
   margin-left: 16px;
@@ -37,6 +41,7 @@
 
 .variation {
   flex-grow: 9;
+  padding-right: 100px;
 }
 
 .cap {

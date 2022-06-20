@@ -18,6 +18,8 @@
     & a {
         text-decoration: none;
         color: var(--ax-color-href);
+        font-size: 14px;
+        line-height: 20px;
     }
 
     & h3{
@@ -29,8 +31,8 @@
     & p {
         margin-top: 8px;
         color: var(--ax-color-secondary);
-        font-size: 12px;
-        line-height: 18px;
+        font-size: 14px;
+        line-height: 20px;
     }
 
     & .content{
