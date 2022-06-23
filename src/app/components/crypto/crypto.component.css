@@ -1,9 +1,9 @@
 :host {
   display: flex;
-  width: 100%;
   height: 64px;
   padding: 16px;
   cursor: pointer;
+  align-items: center;
 }
 :host:hover {
   background-color: var(--ax-bg-primary);
@@ -18,13 +18,13 @@
 }
 :host .title-part {
   display: flex;
+  align-items: center;
 }
 
 .title {
   display: flex;
-  align-items: center;
-  width: 120px;
   flex-grow: 13;
+  max-width: 30%;
 }
 .title h1 {
   margin-left: 16px;
@@ -35,17 +35,47 @@
   color: var(--ax-color-secondary);
 }
 
+.vert {
+  color: #03a66d;
+}
+
 .price {
+  display: flex;
   flex-grow: 17;
+  max-width: 30%;
+  justify-content: flex-start;
 }
 
 .variation {
   flex-grow: 9;
-  padding-right: 100px;
+  justify-content: flex-start;
+  color: #cf304a;
 }
 
 .cap {
   flex-grow: 7;
   justify-self: flex-end;
   text-align: right;
+}
+
+@media (max-width: 760px) {
+  .cap {
+    display: none;
+  }
+
+  .title {
+    flex-grow: 10;
+    max-width: 50%;
+  }
+
+  .price {
+    flex-grow: 5;
+    text-align: right;
+    justify-content: flex-end;
+  }
+
+  .variation {
+    flex-grow: 5;
+    text-align: right;
+  }
 }

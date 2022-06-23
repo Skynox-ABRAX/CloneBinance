@@ -23,8 +23,8 @@
     }
 
     & h3{
-        font-size: 16px;
-        line-height: 24px;
+        font-size: 20px;
+        line-height: 32px;
         font-weight: 600;
     }
 
@@ -49,4 +49,33 @@
 
 .mediaObject{
     display: flex;
+}
+
+@media (max-width: 1030px){
+
+    :host{
+        width: 50%;
+    }
+
+
+
+}
+
+@media (max-width: 760px){
+
+    :host{
+        width: 100%;
+    }
+
+    .mediaObject{
+        flex-direction: column;
+
+        & .content{
+            margin-left: 0;
+        }
+    }
+    
+
+
+
 }

@@ -1,0 +1,25 @@
+<div class="media-object">
+
+    <div class="content">
+        <div class="img">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="">
+                <use [attr.xlink:href]="item.svgPath"></use>
+            </svg>
+    
+        </div>
+        <div class="main-content">
+            <div class="overlay-title">
+                <h2>{{item.title}}</h2>
+                <span *ngIf="item.more!=''">{{item.more}}</span>
+            </div>
+            <p>{{item.description}}</p>
+
+        </div>
+        <div class="arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="">
+                <use xlink:href="#arrow-right-f"></use>
+            </svg>
+        </div>
+    </div>
+
+</div>

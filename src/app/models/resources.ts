@@ -10,6 +10,11 @@ export const hero=[
     },
     
     { 
+        title: '76 milliards $',
+        description: 'Volume d’échanges sur 24 h sur la plateforme Binance'
+    },
+    
+    { 
         title: '+ de 600',
         description: 'Cryptomonnaies listées'
     },
@@ -241,3 +246,287 @@ export const footer_header = [
 ];
 
 export const footer ="Binance © 2022";
+
+
+export const overlay=[
+
+    [
+
+        {
+            svgPath: '#bank-g',
+            title: 'Dépôt bancaire',
+            description: 'Déposer des EUR avec SEPA ou une carte.',
+            more: 'Hot',
+
+        },
+        
+        {
+            svgPath: '#card-g',
+            title: 'Carte de crédit',
+            description: 'Acheter des cryptos avec une carte.',
+            more: 'Hot',
+
+        },
+        
+        {
+            svgPath: '#wallet-g-1',
+            title: 'Solde en cash',
+            description: 'Achetez des cryptos avec votre solde EUR',
+            more: '',
+
+        },
+        
+        {
+            svgPath: '#bank-g',
+            title: 'Virement bancaire',
+            description: 'Achetez des BUSD via SEPA',
+            more: '',
+
+        },
+        
+        {
+            svgPath: '#p2p-g',
+            title: 'Trading P2P',
+            description: 'Virement bancaire et 100+ options',
+            more: '',
+
+        }
+        
+         
+], [
+
+    {
+        svgPath: '#chart-bar-g',
+        title: 'Marchés',
+        description: 'Tradez des Bitcoin et d\'autres cryptomonnaies',
+        more: '',
+
+    },
+    {
+        svgPath: '#convert-g',
+        title: 'Binance convert',
+        description: 'La façon la plus rapide de trader',
+        more: '',
+
+    },
+    {
+        svgPath: '#spot-g',
+        title: 'Spot',
+        description: 'Tradez des cryptos avec des outils avancés',
+        more: '',
+
+    },
+    {
+        svgPath: '#margin-g',
+        title: 'Marge',
+        description: 'Maximiser les gains avec un effet de levier élevé',
+        more: '',
+
+    },
+    {
+        svgPath: '#p2p-g',
+        title: 'Compte P2P',
+        description: 'Virement bancaire et 100+ options',
+        more: '',
+
+    },
+    {
+        svgPath: '#strategy-trading-g',
+        title: 'Stratégie de trading',
+        description: 'Tradez facilement, tradez comme un pro',
+        more: '',
+
+    },
+    {
+        svgPath: '#swap-farming',
+        title: 'Swap farming',
+        description: 'Echanger pour gagner des BNB',
+        more: '',
+
+    },
+    {
+        svgPath: '#fan-token',
+        title: 'Fan token',
+        description: 'Améliorez l\'expérience de vos fans.',
+        more: '',
+
+    }
+],
+
+[
+
+    {
+        svgPath: '#futures-g',
+        title: 'Présentation des Futures de Binance',
+        description: 'Voir notre gamme complète de produits dérivés en cryptos.',
+        more: '',
+
+    },
+    {
+        svgPath: '#reponsible-trading-g',
+        title: 'Trading responsable',
+        description: 'Découvrez comment vous pouvez pratiquer un trading responsable avec Binance Futures',
+        more: '',
+
+    },
+    {
+        svgPath: '#futures-usdt-m-g',
+        title: 'Futures USDⓈ-M',
+        description: 'Contrats perpétuels ou trimestriels établis en USDT ou BUSD',
+        more: '',
+
+    },
+    {
+        svgPath: '#futures-coin-m-g',
+        title: 'Futures COIN-Ⓜ',
+        description: 'Contrats perpétuels ou trimestriels établis en cryptos',
+        more: '',
+
+    },
+    {
+        svgPath: '#futures-options-vanilla-g',
+        title: 'Vanilla Options',
+        description: 'Achetez et vendez des options Vanilla de style européen.',
+        more: '',
+
+    },
+    {
+        svgPath: '#futures-leveraged-token-g',
+        title: 'Tokens à effet de levier',
+        description: 'Bénéficiez d\'un effet de levier plus important sans risque de liquidation',
+        more: '',
+
+    },
+    {
+        svgPath: '#battle-g',
+        title: 'Bataille',
+        description: 'Entrez dans la bataille, Long vs Short',
+        more: '',
+
+    },
+    {
+        svgPath: '#vip-g',
+        title: 'Portail des dérivés',
+        description: 'Services exclusifs VIP adaptés au niveau institutionnel',
+        more: '',
+
+    }
+
+
+
+],
+
+[
+
+    {
+        svgPath: '#card-binance-g',
+        title: 'Carte Visa de Binance',
+        description: 'Convertissez et payez avec des cryptos dans le monde entier',
+        more: '',
+
+    },
+    {
+        svgPath: '#wallet-g-1',
+        title: 'Prêts Cryptos',
+        description: 'Obtenez un prêt instantané garanti par des actifs cryptos',
+        more: '',
+
+    },
+    {
+        svgPath: '#gift-card',
+        title: 'Carte-cadeau Binance',
+        description: 'Carte cadeau en crypto personnalisable',
+        more: '',
+
+    }
+
+],
+
+[
+
+    {
+        svgPath: '#piggy-bank',
+        title: 'Binance Earn',
+        description: 'Une solution d\'investissement unique',
+        more: '',
+
+    },
+    
+    {
+        svgPath: '#earn-savings-g ',
+        title: 'Épargnes',
+        description: 'Votre compte d\'épargne en crypto.',
+        more: '',
+
+    },
+    
+    {
+        svgPath: '#vault-g ',
+        title: 'BNB Vault',
+        description: 'Obtenez des avantages multiples grâce à BNB.',
+        more: '',
+
+    },
+   
+    {
+        svgPath: '#liquid-swap-g',
+        title: 'Farming de liquidité',
+        description: 'Ajoutez de la liquidité et gagnez le double',
+        more: '',
+
+    },
+   
+    {
+        svgPath: '#pool-g',
+        title: 'Pool Binance',
+        description: 'Minez plus de récompenses en vous connectant au Pool',
+        more: '',
+
+    }
+
+
+
+],
+
+[
+    {
+        svgPath: '#launchpad-g',
+        title: 'Launchpad',
+        description: 'Plateforme de lancement de Token',
+        more: '',
+
+    },
+    {
+        svgPath: '#earn-staking-g ',
+        title: 'Staking',
+        description: 'Stake simple, rendements plus élevés.',
+        more: '',
+
+    },
+    {
+        svgPath: '#savings-dual-g',
+        title: 'Double investissement',
+        description: 'Engagez vos positions en crypto et bénéficiez de rendements plus élevés.',
+        more: '',
+
+    },
+    {
+        svgPath: '#auto-invest',
+        title: 'Auto-Invest',
+        description: 'Cumulez des cryptos sur autopilot',
+        more: 'new',
+
+    }
+
+]
+
+
+
+
+
+
+
+
+
+
+]

@@ -1,6 +1,6 @@
-import { Component, Inject } from '@angular/core';
+import { Component, ElementRef, Inject, OnInit, ViewChild } from '@angular/core';
 import { ResourcesService } from './services/resources.service';
-import { advice, section_header, more, options, possibility, hero, infos, crypto} from '../app/models/resources'
+import { advice, section_header, more, options, possibility, hero, infos, crypto, overlay} from '../app/models/resources'
 import { footer_header } from '../app/models/resources'
 import { footerItem } from './models/footerItem';
 import { moreItem } from './models/moreItem';
@@ -10,13 +10,17 @@ import { possibilityItem } from './models/possibilityItem';
 import { heroItem } from './models/heroItem';
 import { infoItem } from './models/infoItem';
 import { cryptoItem } from './models/cryptoItem';
+import { overlayItem } from './models/overlayItem';
+import { Overlay2Component } from './components/overlay2/overlay2.component';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
+
+  @ViewChild('overlay2', { read: ElementRef}) overlay2: ElementRef;
 
 
   section:sectionItem[];
@@ -28,6 +32,7 @@ export class AppComponent {
   heroes: heroItem[];
   infos: infoItem[];
   cryptos: cryptoItem[];
+
 
   section_header = section_header;
 
@@ -43,8 +48,25 @@ export class AppComponent {
     this.cryptos = crypto.map( a => new cryptoItem(a.imageURL, a.title, a.crypto, a.lastPrice, a.variation, a.capitalisation));
 
 
+
     console.log("footer", this.footer_detail);
     console.log("more", this.mores);
+
+  }
+
+  ngOnInit(): void {
+ 
+    
+  }
+
+  openClose(){
+
+
+
+      this.overlay2.nativeElement.classList.toggle('move');
+
+
+      
 
   }
 

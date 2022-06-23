@@ -11,7 +11,7 @@
     <h1>{{cryptoItem.lastPrice}}</h1>
 </div>
 <div class="variation">
-    <h1>{{cryptoItem.variation}}</h1>
+    <h1 [ngClass]="(cryptoItem.title === 'BUSD') ? 'vert' : ''">{{cryptoItem.variation}}</h1>
 </div>
 <div class="cap">
     <h1>{{cryptoItem.capitalisation}}</h1>

@@ -63,6 +63,7 @@ body {
   font-size: 0.625rem;
   min-height: 100vh;
   font-family: sans-serif;
+  overflow-x: hidden;
 }
 
 :root {
@@ -190,4 +191,27 @@ footer {
 
 .cryptoContent {
   flex-direction: column;
+}
+
+app-overlay {
+  position: absolute;
+  top: 45px;
+  left: 0;
+  display: none;
+  width: 100%;
+  z-index: 5;
+}
+
+.ax-title:hover app-overlay {
+  display: flex;
+  width: auto;
+  height: auto;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+@media (max-width: 760px) {
+  .ax-pad-background {
+    background-image: url("/assets/img/mobile-background-image.png");
+  }
 }

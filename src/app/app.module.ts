@@ -11,6 +11,9 @@ import { FooterComponent } from './components/footer/footer.component';
 import { InfosComponent } from './components/infos/infos.component';
 import { CryptoComponent } from './components/crypto/crypto.component';
 import { HtmlPipe } from './pipes/html.pipe';
+import { OverlayComponent } from './components/overlay/overlay.component';
+import { ItemOverlayComponent } from './components/item-overlay/item-overlay.component';
+import { Overlay2Component } from './components/overlay2/overlay2.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,10 @@ import { HtmlPipe } from './pipes/html.pipe';
     FooterComponent,
     InfosComponent,
     CryptoComponent,
-    HtmlPipe
+    HtmlPipe,
+    OverlayComponent,
+    ItemOverlayComponent,
+    Overlay2Component
   ],
   imports: [
     BrowserModule,

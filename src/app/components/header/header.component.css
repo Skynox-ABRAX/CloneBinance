@@ -94,8 +94,8 @@ ul, .choice {
 }
 
 .ax-title h3 {
-  font-size: 12px;
-  line-height: 18px;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .right {
@@ -106,11 +106,20 @@ ul, .choice {
   line-height: 20px;
 }
 
+.left li, .right li {
+  position: relative;
+}
+
+.right li:nth-of-type(3):hover .content-detail-overlay {
+  display: flex;
+}
+
 .logo-theme {
   width: 16px;
   height: 16px;
   color: var(--ax-color-primary);
   margin-right: 20px;
+  margin-left: 6px;
   cursor: pointer;
 }
 
@@ -151,6 +160,11 @@ ul, .choice {
   z-index: -2;
 }
 
+.currency {
+  font-size: 14px;
+  line-height: 20px;
+}
+
 .currency:hover {
   color: var(--ax-bg-button);
   cursor: pointer;
@@ -159,4 +173,99 @@ ul, .choice {
 .ax-title:hover .dropdown, .menu:hover .dropdown {
   transform: rotate(180deg);
   cursor: pointer;
+}
+
+.logo-hamburger {
+  width: 24px;
+  height: 24px;
+  display: none;
+  margin-right: 20px;
+}
+.logo-hamburger:hover {
+  color: var(--ax-color-hover);
+  cursor: pointer;
+}
+
+.right-plus {
+  display: flex;
+  align-items: center;
+}
+
+.content-overlay {
+  display: flex;
+  height: auto;
+  position: absolute;
+  top: 45px;
+}
+.content-overlay app-overlay {
+  position: static;
+  height: auto;
+  margin-left: 0;
+}
+
+.content-detail-overlay {
+  position: absolute;
+  top: 45px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 16px;
+}
+.content-detail-overlay svg {
+  width: 140px;
+  height: 140px;
+}
+.content-detail-overlay .content-detail-title {
+  width: 100%;
+  border-bottom: 1px solid #e2dddd;
+}
+.content-detail-overlay div {
+  text-align: center;
+  margin-top: 16px;
+  font-size: 12px;
+  line-height: 18px;
+  margin-bottom: 16px;
+  color: var(--ax-color-secondary);
+}
+.content-detail-overlay a {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 18px;
+  background-color: var(--ax-color-hover);
+  padding: 8px;
+  color: var(--ax-color-primary);
+  font-weight: 600;
+  border-radius: 5px;
+  width: 100%;
+}
+
+@media (max-width: 1500px) {
+  .right, .right-plus {
+    display: none;
+  }
+
+  .logo-hamburger {
+    display: block;
+  }
+}
+@media (max-width: 900px) {
+  .left {
+    display: none;
+  }
+
+  .choice {
+    flex-grow: initial;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  :host {
+    justify-content: space-between;
+  }
 }
