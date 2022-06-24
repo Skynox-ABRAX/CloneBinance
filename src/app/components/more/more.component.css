@@ -1,41 +1,40 @@
 :host {
   display: block;
-  padding: 24px;
+  padding: 2.4rem;
 }
 :host svg {
-  width: 18px;
-  height: 18px;
+  width: 1.8rem;
+  height: 1.8rem;
   color: var(--ax-color-href);
-  margin-left: 8px;
+  margin-left: 0.8rem;
 }
 :host img {
-  width: 64px;
-  height: 64px;
+  width: 6.4rem;
+  height: 6.4rem;
 }
 :host a {
-  text-decoration: none;
   color: var(--ax-color-href);
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 1.4rem;
+  line-height: 2rem;
 }
 :host h3 {
-  font-size: 20px;
-  line-height: 32px;
+  font-size: 2rem;
+  line-height: 3.2rem;
   font-weight: 600;
 }
 :host p {
-  margin-top: 8px;
+  margin-top: 0.8rem;
   color: var(--ax-color-secondary);
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 1.4rem;
+  line-height: 2rem;
 }
 :host .content {
-  margin-left: 24px;
+  margin-left: 2.4rem;
 }
 :host .link {
   display: flex;
   align-items: center;
-  margin-top: 16px;
+  margin-top: 1.6rem;
 }
 
 .mediaObject {

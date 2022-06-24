@@ -1,15 +1,19 @@
 :host{
     display: block;
     max-width: 33.33%;
-    padding: 16px 12px;
+    padding: 1.6rem 1.2rem;
 
     cursor: pointer;
+    // transition: box-shadow 200ms ease-in;
+}
+
+:host, :host:hover{
     transition: box-shadow 200ms ease-in;
 }
 
 :host:hover{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    transition: box-shadow 200ms ease-in;
+    // transition: box-shadow 200ms ease-in;
 }
 
 img{
@@ -25,52 +29,57 @@ img{
 }
 
 
-
-
+.mediaObject,
+.possibility-plus{
+    display: flex;
+}
+.mediaObject{
+    flex-direction: column;
+}
 
 .mediaObject{
-    display: flex;
-    flex-direction: column;
+    // display: flex;
+    // flex-direction: column;
     //row-gap: 48px;
     word-wrap: break-word;
-    padding: 40px 24px;
+    padding: 4rem 2.4rem;
     height: 100%;
     justify-content: space-between;
     background-color: var(--ax-bg-primary);
     border-radius: 5px;
 
     & h2{
-        font-size: 28px;
+        font-size: 2.8rem;
         font-weight: 600;
-        margin-bottom: 16px;
-        line-height: 36px;
+        margin-bottom: 1.6rem;
+        line-height: 3.6rem;
 
     }
 
     & p{
         color: var(--ax-color-accent);
-        font-size: 16px;
-        line-height: 24px;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
     }
 }
 
 .possibility-plus{
-    display: flex;
+    // display: flex;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 2rem;
     display: none;
 }
 
 .possibility-plus a {
-    text-decoration: none;
+    // text-decoration: none;
     color: var(--ax-color-hover);
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 1.4rem;
+    line-height: 2rem;
 }
 
 .possibility-plus svg{
-    width: 18px;
-    height: 18px;
+    width: 1.8rem;
+    height: 1.8rem;
     color: var(--ax-color-hover);
 }
 
@@ -90,16 +99,16 @@ img{
         justify-content: space-between;
 
         & img{
-            width: 265px;
+            width: 26.5rem;
         }
 
         & .content{
-            width: 358px;
+            width: 36rem;
 
             & h2{
                 width:100%;
-                font-size: 24px;
-                line-height: 32px;
+                font-size: 2.4rem;
+                line-height: 3.2rem;
             }
         }
 
@@ -128,13 +137,13 @@ img{
             width: 100%;
 
             & h2{
-                font-size: 20px;
-                line-height: 28px;
+                font-size: 2rem;
+                line-height: 2.8rem;
             }
 
             & p{
-                font-size: 14px;
-                line-height: 20px;
+                font-size: 1.4rem;
+                line-height: 2rem;
             }
         }
     }

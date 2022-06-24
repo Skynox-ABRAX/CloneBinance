@@ -44,9 +44,23 @@ q:before, q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button{
+    cursor: pointer;
 }
 
 *{
@@ -58,11 +72,10 @@ table {
 
 body{
 
-    font-size: 0.625rem;
+    // font-size: 0.625rem;
     min-height: 100vh;
     font-family: sans-serif;
     overflow-x: hidden;
-
 }
 
 
@@ -73,11 +86,9 @@ body{
     --ax-bg-primary: rgba(250,250,250,1);
     --ax-bg-button: rgba(252,213,53,1);
 
-
     --ax-color-button: rgba(24,26,32,1);
     --ax-color-href: rgba(201,148,0,1);
     --ax-color-hover: rgba(240,185,11,1);
-
 
     --ax-color-primary: rgba(30,35,41,1);
     --ax-color-accent: rgba(71,77,87,1);
@@ -89,9 +100,7 @@ body{
     --ax-fontSize-text: 1.6rem;
     --ax-fontSize-detail: 1.4rem;
     --ax-fontSize-h1: 5.6rem;
-
     --ax-fontSize-svg: 1.8rem;
-
 
 }
 
@@ -100,81 +109,69 @@ body{
     display: none;
 }
 
-.ax-bg-primary{
-    background-color: var(--ax-bg-primary);
-}
-.ax-bg-button{
-    background-color: var(--ax-bg-button);
-}
-.ax-color-hover{
-    color: var(--ax-color-hover);
-}
-.ax-color-button{
-    color: var(--ax-color-button);
-}
-.ax-color-href{
-    color: var(--ax-color-href);
-}
-.ax-color-primary{
-    color: var(--ax-color-primary);
-}
-.ax-color-accent{
-    color: var(--ax-color-accent);
-}
-.ax-color-secondary{
-    color: var(--ax-color-secondary);
-}
-.ax-fontSize-title{
-    font-size: var(--ax-fontSize-title);
-}
-.ax-fontSize-subtitle{
-    font-size: var(--ax-fontSize-subtitle);
-}
-.ax-fontSize-text-title{
-    font-size: var(--ax-fontSize-text-title);
-}
-.ax-fontSize-text{
-    font-size: var(--ax-fontSize-text);
-}
-.ax-fontSize-detail{
-    font-size: var(--ax-fontSize-detail);
-}
-.ax-fontSize-svg{
-    font-size: var(--ax-fontSize-svg);
-}
+// .ax-bg-primary{
+//     background-color: var(--ax-bg-primary);
+// }
+// .ax-bg-button{
+//     background-color: var(--ax-bg-button);
+// }
+// .ax-color-hover{
+//     color: var(--ax-color-hover);
+// }
+// .ax-color-button{
+//     color: var(--ax-color-button);
+// }
+// .ax-color-href{
+//     color: var(--ax-color-href);
+// }
+// .ax-color-primary{
+//     color: var(--ax-color-primary);
+// }
+// .ax-color-accent{
+//     color: var(--ax-color-accent);
+// }
+// .ax-color-secondary{
+//     color: var(--ax-color-secondary);
+// }
+// .ax-fontSize-title{
+//     font-size: var(--ax-fontSize-title);
+// }
+// .ax-fontSize-subtitle{
+//     font-size: var(--ax-fontSize-subtitle);
+// }
+// .ax-fontSize-text-title{
+//     font-size: var(--ax-fontSize-text-title);
+// }
+// .ax-fontSize-text{
+//     font-size: var(--ax-fontSize-text);
+// }
+// .ax-fontSize-detail{
+//     font-size: var(--ax-fontSize-detail);
+// }
+// .ax-fontSize-svg{
+//     font-size: var(--ax-fontSize-svg);
+// }
 
-.ax-fontSize-h1{
-    font-size: var(--ax-fontSize-h1);
-}
-
-.main{
-    display: flex;
-    flex-direction: column;
-}
+// .ax-fontSize-h1{
+//     font-size: var(--ax-fontSize-h1);
+// }
 
 section{
     width: 100%;
     height: auto;
 }
 
-.footer-previous{
+
+
+.moreContent, .optionContent, .mainPossibility, .footer-previous, .mainOptions,
+.ax-hero-list, .mainInfos, .cryptoContent, .form-input, .form, .headerCrypto,
+.ax-title:hover app-overlay,
+.main{
     display: flex;
 }
 
-footer{
-    text-align: center;
-}
-
-.moreContent, .optionContent, .mainPossibility{
-    display: flex;
-}
-
-.optionContent{
+.optionContent, .cryptoContent, .ax-title:hover app-overlay, .main{
     flex-direction: column;
-}
-
-.mainOptions{
-    display: flex;
 }
 
 .ax-pad-background{
@@ -183,15 +180,6 @@ footer{
     background-position: 50%;
 
 }
-
-.ax-hero-list, .mainInfos, .cryptoContent, .form-input, .form, .headerCrypto{
-    display: flex;
-}
-
-.cryptoContent{
-    flex-direction: column;
-}
-
 
 app-overlay{
     position: absolute;
@@ -204,11 +192,13 @@ app-overlay{
 }
 
 .ax-title:hover app-overlay{
-    display: flex;
     width: auto;
     height: auto;
-    flex-direction: column;
     row-gap: 16px;
+}
+
+footer{
+    text-align: center;
 }
 
 @media (max-width: 760px){

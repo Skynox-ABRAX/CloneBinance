@@ -1,23 +1,23 @@
 :host{
 
-    margin-bottom: 64px;
-    padding-right: 24px;
+    margin-bottom: 6.4rem;
+    padding-right: 2.4rem;
 
 
     & .content{
-        margin-left: 40px;
+        margin-left: 4rem;
     }
 
     & h3{
-        font-size: 20px;
-        line-height: 32px;
+        font-size: 2rem;
+        line-height: 3.2rem;
         font-weight: 600;
-        margin-bottom: 8px;
+        margin-bottom: 0.8rem;
     }
 
     & p{
-        font-size: 14px;
-        line-height: 24px;
+        font-size: 1.4rem;
+        line-height: 2.4rem;
         color: var(--ax-color-secondary);
     }
 
@@ -44,19 +44,19 @@
         flex-direction: column;
 
         & h3{
-            font-size: 20px;
-            line-height: 28px;
+            font-size: 2rem;
+            line-height: 2.8rem;
         }
 
         & p{
-            font-size: 14px;
-            line-height: 20px;
+            font-size: 1.4rem;
+            line-height: 2rem;
         }
     }
 
     img{
-        width: 48px;
-        height: 48px;
+        width: 4.8rem;
+        height: 4.8rem;
 
     }
 
@@ -66,7 +66,7 @@
 
     .mediaObject .content{
         margin-left: 0;
-        margin-top: 20px;
+        margin-top: 2rem;
     }
 
 

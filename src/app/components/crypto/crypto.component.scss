@@ -1,6 +1,12 @@
-:host{
+:host, 
+.title,
+.price{
+
     display: flex;
-    //width: 100%;
+}
+
+:host{
+
     height: 64px;
     padding: 16px;
     cursor: pointer;
@@ -10,19 +16,14 @@
         background-color: var(--ax-bg-primary);
     }
 
-
-    // & > *{
-    //     justify-content: flex-start;
-    // }
-
     & img{
-        width: 28px;
-        height: 28px;
+        width: 2.8rem;
+        height: 2.8rem;
     }
 
     & h1{
-        font-size: 16px;
-        line-height: 24px;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
     }
 
     & .title-part{
@@ -34,16 +35,14 @@
 }
 
 .title{
-    display: flex;
-    //align-items: center;
-    //width: 120px;
+    // display: flex;
     flex-grow: 13;
     max-width: 30%;
 
     & h1{
-        margin-left: 16px;
-        margin-right: 8px;
-        font-size: 16px;
+        margin-left: 1.6rem;
+        margin-right: 0.8rem;
+        font-size: 1.6rem;
     }
 
     & h2{
@@ -57,24 +56,32 @@
 }
 
 
+.price, .variation{
+    justify-content: flex-start;
+}
+
 .price{
-    display: flex;
+    // display: flex;
     flex-grow: 17;
     max-width: 30%;
-    justify-content: flex-start;
+    // justify-content: flex-start;
 
 }
 
 .variation{
     flex-grow: 9;
-    justify-content: flex-start;
+    // justify-content: flex-start;
     color: rgb(207,48,74);
 
 }
 
+.cap, .price{
+    justify-self: flex-end;
+}
+
 .cap{
     flex-grow: 7;
-    justify-self: flex-end;
+    // justify-self: flex-end;
     text-align: right;
 }
 
@@ -87,19 +94,24 @@
         flex-grow: 10;
         max-width: 50%;
     }
+
+    .price, .variation{
+        text-align: right;
+        flex-grow: 5;
+    }
     
     .price{
-        flex-grow: 5;
-        text-align: right;
+        // flex-grow: 5;
+        // text-align: right;
         justify-content: flex-end;
 
 
     }
     
-    .variation{
-        flex-grow: 5;
-        text-align: right;
+    // .variation{
+    //     flex-grow: 5;
+    //     // text-align: right;
 
-    }
+    // }
 }
 

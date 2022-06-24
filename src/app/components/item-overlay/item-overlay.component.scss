@@ -1,6 +1,6 @@
 :host{
     padding: 32px 16px 16px 16px;
-    width: auto;
+    // width: auto;
     background-color: white;
     overflow: hidden;
 
@@ -14,30 +14,45 @@
 svg{
 
     // margin-left: 28px;
-    width: 32px;
-    height: 32px;
+    width: 3.2rem;
+    height: 3.2rem;
 
 }
 
-.content{
-    display: flex;
-    align-items: center;
-}
-
+.content,
 .main-content, .overlay-title{
     display: flex;
 
 }
 
-.overlay-title{
+
+
+.content, .overlay-title{
+    // display: flex;
     align-items: center;
 }
 
+// .main-content, .overlay-title{
+//     display: flex;
+
+// }
+
+// .overlay-title{
+// //     align-items: center;
+// // }
+
+
+h2,
+p,
+:host{
+    width: auto; 
+}
+
 h2{
-    font-size: 16px;
-    line-height: 18.4px;
+    font-size: 1.6rem;
+    line-height: 2rem;
     color: var(--ax-color-primary);
-    width: auto;
+    // width: auto;
 
 }
 
@@ -45,20 +60,20 @@ p{
     font-size: 12px;
     line-height: 13.8px;
     color: var(--ax-color-secondary);
-    width: auto;
-    min-width: 300px;
-    margin-top: 4px;
+    // width: auto;
+    min-width: 30rem;
+    margin-top: 0.4rem;
 
 }
 
 .main-content{
     flex-direction: column;
-    padding-left: 16px;
+    padding-left: 1.6rem;
 }
 
 .arrow svg{
-    width: 24px;
-    height: 24px;
+    width: 2.4rem;
+    height: 2.4rem;
 }
 
 .arrow{
@@ -66,11 +81,11 @@ p{
 }
 
 span{
-    margin-left: 8px;
+    margin-left: 0.8rem;
     background-color: var(--ax-color-hover);
     color: var(--ax-color-primary);
-    padding: 4px;
-    border-radius: 3px;
+    padding:0.4rem;
+    border-radius: 0.3rem;
     position: relative;
 }
 

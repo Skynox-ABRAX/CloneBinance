@@ -1,5 +1,10 @@
-:host {
+:host,
+.title,
+.price {
   display: flex;
+}
+
+:host {
   height: 64px;
   padding: 16px;
   cursor: pointer;
@@ -9,12 +14,12 @@
   background-color: var(--ax-bg-primary);
 }
 :host img {
-  width: 28px;
-  height: 28px;
+  width: 2.8rem;
+  height: 2.8rem;
 }
 :host h1 {
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
 }
 :host .title-part {
   display: flex;
@@ -22,14 +27,13 @@
 }
 
 .title {
-  display: flex;
   flex-grow: 13;
   max-width: 30%;
 }
 .title h1 {
-  margin-left: 16px;
-  margin-right: 8px;
-  font-size: 16px;
+  margin-left: 1.6rem;
+  margin-right: 0.8rem;
+  font-size: 1.6rem;
 }
 .title h2 {
   color: var(--ax-color-secondary);
@@ -39,22 +43,26 @@
   color: #03a66d;
 }
 
+.price, .variation {
+  justify-content: flex-start;
+}
+
 .price {
-  display: flex;
   flex-grow: 17;
   max-width: 30%;
-  justify-content: flex-start;
 }
 
 .variation {
   flex-grow: 9;
-  justify-content: flex-start;
   color: #cf304a;
+}
+
+.cap, .price {
+  justify-self: flex-end;
 }
 
 .cap {
   flex-grow: 7;
-  justify-self: flex-end;
   text-align: right;
 }
 
@@ -68,14 +76,12 @@
     max-width: 50%;
   }
 
-  .price {
-    flex-grow: 5;
+  .price, .variation {
     text-align: right;
-    justify-content: flex-end;
+    flex-grow: 5;
   }
 
-  .variation {
-    flex-grow: 5;
-    text-align: right;
+  .price {
+    justify-content: flex-end;
   }
 }
