@@ -15,8 +15,6 @@ export class HeaderComponent implements OnInit {
 
   @Output()  touch = new EventEmitter();
   
-
-
   constructor() { }
 
   ngOnInit(): void {
@@ -27,10 +25,8 @@ export class HeaderComponent implements OnInit {
 
   openClose($event:any){
 
-
-
     this.touch.emit();
-    console.log('coucou');
+
 
   }
 

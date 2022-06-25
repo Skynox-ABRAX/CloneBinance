@@ -6,15 +6,10 @@ import { moreItem } from 'src/app/models/moreItem';
   templateUrl: './more.component.html',
   styleUrls: ['./more.component.scss']
 })
-export class MoreComponent implements OnInit {
+export class MoreComponent {
 
   @Input() moreItem: moreItem;
 
   constructor() { }
-
-  ngOnInit(): void {
-
-    
-  }
 
 }

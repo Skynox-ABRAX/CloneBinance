@@ -16,8 +16,6 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-  margin: 0;
-  padding: 0;
   border: 0;
   font-size: 100%;
   font: inherit;
@@ -87,13 +85,6 @@ body {
   --ax-color-primary: rgba(30,35,41,1);
   --ax-color-accent: rgba(71,77,87,1);
   --ax-color-secondary: rgba(112,122,138,1);
-  --ax-fontSize-title: 4rem;
-  --ax-fontSize-text-title: 2rem;
-  --ax-fontSize-subtitle: 2.4rem;
-  --ax-fontSize-text: 1.6rem;
-  --ax-fontSize-detail: 1.4rem;
-  --ax-fontSize-h1: 5.6rem;
-  --ax-fontSize-svg: 1.8rem;
 }
 
 .symbol {
@@ -132,16 +123,23 @@ app-overlay {
   z-index: 5;
 }
 
+.content-overlay {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.content-overlay app-overlay {
+  box-shadow: none;
+}
+
 .ax-title:hover app-overlay {
   width: auto;
   height: auto;
   row-gap: 16px;
 }
 
-footer {
-  text-align: center;
-}
-
+/***********************************************************************************************
+*                                       MEDIA QUERIES
+************************************************************************************************/
 @media (max-width: 760px) {
   .ax-pad-background {
     background-image: url("/assets/img/mobile-background-image.png");

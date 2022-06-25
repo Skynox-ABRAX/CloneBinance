@@ -7,7 +7,7 @@ import { overlayItem } from 'src/app/models/overlayItem';
   templateUrl: './overlay.component.html',
   styleUrls: ['./overlay.component.scss']
 })
-export class OverlayComponent implements OnInit {
+export class OverlayComponent {
 
   @Input() title:string;
   @Input() list: overlayItem[];
@@ -15,7 +15,5 @@ export class OverlayComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
 
 }

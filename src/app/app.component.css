@@ -1,6 +1,41 @@
+/*
+**      1. VARIABLES
+**      2. GROUP
+**      3. GLOBAL
+**      4. SECTION
+**          A. BANNER
+**          B. CRYPTO SECTION
+**          C. POSSIBILITY SECTION    
+**          D. MEDIAS SECTION
+**          E. OPTIONS SECTION
+**          F. FOOTER SECTION
+**          G. CHAT GROUP
+**          H. MISCELLANEOUS
+**      12. MEDIA QUERIES
+**            A. MEDIA QUERY : MAX WIDTH 1030 
+**            B. MEDIA QUERY : MAX WIDTH 760  
+**
+**
+**
+**
+**
+*/
+/***********************************************************************************************
+*                                            VARIABLES
+************************************************************************************************/
+.font-12-16 {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+}
+
 .font-14-18, .infos-callToAction, .chat-container div, .footer-previous-content li, .advice p, .callToAction a, .footer-crypto a, .headerCrypto h1, .header-section a {
   font-size: 1.4rem;
   line-height: 1.8rem;
+}
+
+.font-14-20 {
+  font-size: 1.4rem;
+  line-height: 2rem;
 }
 
 .font-16-20, .medias-icon-title h2 {
@@ -54,7 +89,9 @@
   color: var(--ax-color-hover);
 }
 
-.flex-grow-1, .infos-header-spec > *, .section-header-group, .left-header-title, .header-section > *, .mainOptions > *, .mainMedias > *, .header-section h2, .ax-hero-list > *, .ax-banner-start > * {
+.flex-grow-1, .mainOptions > *, .header-section h2, .ax-banner-start > *, .ax-hero-list > *, .mainMedias > *,
+.header-section > *, .left-header-title, .section-header-group,
+.infos-header-spec > * {
   flex-grow: 1;
 }
 
@@ -86,11 +123,9 @@
   max-width: 50%;
 }
 
-:host {
-  display: block;
-  height: auto;
-}
-
+/***********************************************************************************************
+*                                            GROUP
+************************************************************************************************/
 .ax-banner-content, .ax-hero-title-start, .ax-banner-start, .ax-section-content,
 .header-section, .headerCrypto, .mainMedias, .medias-icons-title, .devices-icons,
 .devices-icons li, .advice, .footer-previous-content, .footer-previous-content section,
@@ -125,6 +160,17 @@
   padding: 0 2.4rem;
 }
 
+/***********************************************************************************************
+*                                            GLOBAL
+************************************************************************************************/
+:host {
+  display: block;
+  height: auto;
+}
+
+/***********************************************************************************************
+*                                            BANNER
+************************************************************************************************/
 img {
   width: 50%;
 }
@@ -193,7 +239,6 @@ section {
 }
 
 .header-section {
-  /* margin-bottom: 64px;*/
   align-items: center;
 }
 .header-section:hover path {
@@ -208,6 +253,9 @@ section {
   color: var(--ax-color-accent);
 }
 
+/***********************************************************************************************
+*                                            CRYPTO SECTION
+************************************************************************************************/
 .headerCrypto {
   height: 6.4rem;
   padding: 1.6rem;
@@ -247,11 +295,17 @@ section {
   transition: background-color 200ms ease-in;
 }
 
+/***********************************************************************************************
+*                                            POSSIBILITY SECTION
+************************************************************************************************/
 .mainPossibility {
   -moz-column-gap: 2.4rem;
        column-gap: 2.4rem;
 }
 
+/***********************************************************************************************
+*                                            MEDIAS SECTION
+************************************************************************************************/
 .mainMedias {
   margin-top: 8rem;
 }
@@ -296,6 +350,9 @@ section {
   margin-top: 1.2rem;
 }
 
+/***********************************************************************************************
+*                                            OPTIONS SECTION
+************************************************************************************************/
 .mainOptions {
   margin-top: 4rem;
   -moz-column-gap: 4rem;
@@ -342,6 +399,9 @@ section {
   align-self: flex-start;
 }
 
+/***********************************************************************************************
+*                                            FOOTER SECTION
+************************************************************************************************/
 .footer-previous {
   margin-top: 4.8rem;
 }
@@ -375,6 +435,9 @@ section {
   padding-bottom: 1.6rem;
 }
 
+/***********************************************************************************************
+*                                            CHAT GROUP
+************************************************************************************************/
 .chat-container {
   position: fixed;
   right: 2rem;
@@ -395,6 +458,9 @@ section {
   display: block;
 }
 
+/***********************************************************************************************
+*                                            MISCELLANEOUS
+************************************************************************************************/
 .header-section img {
   width: 335px;
   margin: 0 135px;
@@ -441,6 +507,11 @@ section {
   width: 50%;
 }
 
+.footer-item-responsive li:hover, .content-icons-footer svg:hover {
+  color: var(--ax-color-primary);
+  cursor: pointer;
+}
+
 .community {
   width: 40%;
 }
@@ -450,10 +521,28 @@ section {
   transition: right 500ms ease-in;
 }
 
+/***********************************************************************************************
+*                                            MEDIA QUERY : MAX WIDTH 1030
+************************************************************************************************/
 @media (max-width: 1030px) {
+  .font-32-40, .header-section h2 {
+    font-size: 3.2rem;
+    line-height: 4rem;
+  }
+
   .left-header-title, .ax-banner-start, .mainPossibility,
-.mainOptions {
+.mainOptions,
+.footer-previous-content section.footer-previous-content-part {
     flex-direction: column;
+  }
+
+  .infos-responsive, .medias-responsive {
+    display: block;
+  }
+
+  .infos-no-responsive, .medias-no-responsive,
+.ax-hero-list li:first-of-type {
+    display: none;
   }
 
   .ax-banner-start img {
@@ -480,15 +569,6 @@ section {
     height: 12rem;
   }
 
-  .infos-responsive {
-    display: block;
-  }
-
-  .infos-no-responsive, .medias-no-responsive,
-.ax-hero-list li:first-of-type {
-    display: none;
-  }
-
   .left-header-title img {
     align-self: center;
     width: 19rem;
@@ -508,10 +588,6 @@ section {
   .mainMedias img {
     padding-left: 7rem;
     padding-right: 7rem;
-  }
-
-  .medias-responsive {
-    display: block;
   }
 
   .medias-icons {
@@ -550,11 +626,6 @@ section {
     padding: 1rem 2rem;
   }
 
-  .header-section h2 {
-    font-size: 3.2rem;
-    line-height: 4rem;
-  }
-
   .ax-hero-list li:nth-of-type(2) {
     display: inline-block;
     margin-top: 0;
@@ -573,15 +644,35 @@ section {
     bottom: 4rem;
   }
 
-  .footer-previous-content section.footer-previous-content-part {
-    flex-direction: column;
-  }
-
   .footer-previous-content section.footer-previous-content-part > * {
     max-width: 100%;
   }
 }
+/***********************************************************************************************
+*                                            MEDIA QUERY : MAX WIDTH 760
+************************************************************************************************/
 @media (max-width: 760px) {
+  .font-40-48-2, .ax-hero-title {
+    font-size: 4rem;
+    line-height: 4.8rem;
+  }
+
+  .font-24-32-2, .ax-hero-list h2, .header-section h2,
+.callToActionContent h2 {
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+  }
+
+  .font-12-16-2, .ax-hero-list p {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+  }
+
+  .font-14-20-2, .section-header-group p {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+
   .form-input, .form-input input,
 .mainCrypto a, .infosContent a,
 .callToActionContent a,
@@ -593,13 +684,12 @@ section {
 
   .ax-banner-start img,
 .footer-item-responsive,
-.nav-no-visible {
+.nav-no-visible,
+.devices-icons li:nth-of-type(1), .devices-icons li:nth-of-type(3), .devices-icons li:nth-of-type(4),
+.devices-icons li:nth-of-type(5), .devices-icons li:nth-of-type(6),
+.item-link-group,
+.cap {
     display: none;
-  }
-
-  .ax-hero-title {
-    font-size: 4rem;
-    line-height: 4.8rem;
   }
 
   .form-input, .moreContent,
@@ -619,28 +709,11 @@ section {
     margin-left: 0;
   }
 
-  .ax-hero-list h2, .header-section h2,
-.callToActionContent h2 {
-    font-size: 2.4rem;
-    line-height: 3.2rem;
-  }
-
-  .ax-hero-list p {
-    font-size: 1.2rem;
-    line-height: 1.6rem;
-  }
-
-  .section-header-group p {
-    font-size: 1.4rem;
-    line-height: 2rem;
-  }
-
   .mainCrypto a, .infosContent a {
     text-align: center;
   }
 
   .mainCrypto a {
-    text-align: center;
     margin-bottom: 4rem;
   }
 
@@ -689,13 +762,6 @@ section {
 
   .devices-icons {
     justify-content: space-around;
-  }
-
-  .devices-icons li:nth-of-type(1), .devices-icons li:nth-of-type(3), .devices-icons li:nth-of-type(4),
-.devices-icons li:nth-of-type(5), .devices-icons li:nth-of-type(6),
-.item-link-group,
-.cap {
-    display: none;
   }
 
   .item-link-group-responsive {

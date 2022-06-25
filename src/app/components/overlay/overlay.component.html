@@ -1,5 +1,19 @@
 <div class="overlay">
 
+    <div class="header" *ngIf="title!==undefined">
+        <div class="header-content">
+            <h1>{{title}}</h1>
+            <div class="right">
+                <div class="action"></div>
+                <div class="currency">EUR</div>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="css-dzb8xt">
+                    <use xlink:href="#icon-h-dropdown-arrow"></use>
+                </svg>
+
+            </div>
+        </div>
+    </div>
+
     <app-item-overlay *ngFor="let item of list" [item]="item">
 
     </app-item-overlay>

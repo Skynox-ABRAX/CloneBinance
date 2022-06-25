@@ -1,22 +1,41 @@
+/*
+**      1. GENERAL
+**      2. MEDIA QUERIES
+**           
+**
+**
+**
+*/
+
+
+
+
+/***********************************************************************************************
+*                                       GENERAL
+************************************************************************************************/
+
+
 :host{
+    
     display: block;
     max-width: 33.33%;
     padding: 1.6rem 1.2rem;
-
     cursor: pointer;
-    // transition: box-shadow 200ms ease-in;
 }
 
 :host, :host:hover{
+    
     transition: box-shadow 200ms ease-in;
 }
 
 :host:hover{
+
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    // transition: box-shadow 200ms ease-in;
+
 }
 
 img{
+
     width: 100%;
 }
 
@@ -31,16 +50,16 @@ img{
 
 .mediaObject,
 .possibility-plus{
+
     display: flex;
 }
 .mediaObject{
+
     flex-direction: column;
 }
 
 .mediaObject{
-    // display: flex;
-    // flex-direction: column;
-    //row-gap: 48px;
+
     word-wrap: break-word;
     padding: 4rem 2.4rem;
     height: 100%;
@@ -64,14 +83,14 @@ img{
 }
 
 .possibility-plus{
-    // display: flex;
+
     align-items: center;
     margin-top: 2rem;
     display: none;
 }
 
 .possibility-plus a {
-    // text-decoration: none;
+
     color: var(--ax-color-hover);
     font-size: 1.4rem;
     line-height: 2rem;
@@ -82,6 +101,12 @@ img{
     height: 1.8rem;
     color: var(--ax-color-hover);
 }
+
+
+/***********************************************************************************************
+*                                       MEDIAS QUERIES
+************************************************************************************************/
+
 
 
 @media (max-width: 1030px){
@@ -112,15 +137,12 @@ img{
             }
         }
 
-
     }
 
     .possibility-plus{
       display: flex;
     
     }
-
-
 
 }
 

@@ -6,16 +6,13 @@ import { optionItem } from 'src/app/models/optionItem';
   templateUrl: './options.component.html',
   styleUrls: ['./options.component.scss']
 })
-export class OptionsComponent implements OnInit {
+export class OptionsComponent{
 
 
   @Input() optionItem: optionItem;
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
 
-  
 
 }

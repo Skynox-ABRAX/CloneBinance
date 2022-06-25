@@ -1,3 +1,13 @@
+/*
+**      1. GENERAL
+**           
+**
+**
+**
+*/
+/***********************************************************************************************
+*                                       GENERAL
+************************************************************************************************/
 :host {
   background-color: white;
   padding: 1.6rem;
@@ -6,7 +16,48 @@
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.overlay {
+.header-content, .overlay, .right {
   display: flex;
+}
+
+.header-content {
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-size: 1.4rem;
+  color: var(--ax-color-primary);
+}
+
+.action {
+  width: 2rem;
+  height: 2rem;
+  background-image: url("../../../assets/img/eur.png");
+  background-size: cover;
+}
+
+.currency {
+  color: var(--ax-color-primary);
+}
+
+.right {
+  background-color: var(--ax-bg-primary);
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+  padding: 1rem;
+}
+
+.right svg {
+  width: 1.8rem;
+  height: 1.8rem;
+  transform: rotate(-90deg);
+}
+.right svg use {
+  color: var(--ax-color-secondary);
+}
+
+.overlay {
   flex-direction: column;
 }

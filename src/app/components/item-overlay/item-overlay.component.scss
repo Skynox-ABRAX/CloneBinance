@@ -1,6 +1,21 @@
+/*
+**      1. GENERAL
+**           
+**
+**
+**
+*/
+
+
+
+
+/***********************************************************************************************
+*                                       GENERAL
+************************************************************************************************/
+
+
 :host{
     padding: 32px 16px 16px 16px;
-    // width: auto;
     background-color: white;
     overflow: hidden;
 
@@ -13,7 +28,6 @@
 
 svg{
 
-    // margin-left: 28px;
     width: 3.2rem;
     height: 3.2rem;
 
@@ -28,19 +42,9 @@ svg{
 
 
 .content, .overlay-title{
-    // display: flex;
+
     align-items: center;
 }
-
-// .main-content, .overlay-title{
-//     display: flex;
-
-// }
-
-// .overlay-title{
-// //     align-items: center;
-// // }
-
 
 h2,
 p,
@@ -52,7 +56,7 @@ h2{
     font-size: 1.6rem;
     line-height: 2rem;
     color: var(--ax-color-primary);
-    // width: auto;
+
 
 }
 
@@ -60,7 +64,6 @@ p{
     font-size: 12px;
     line-height: 13.8px;
     color: var(--ax-color-secondary);
-    // width: auto;
     min-width: 30rem;
     margin-top: 0.4rem;
 

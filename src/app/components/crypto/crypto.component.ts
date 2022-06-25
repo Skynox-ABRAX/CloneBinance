@@ -6,13 +6,10 @@ import { cryptoItem } from 'src/app/models/cryptoItem';
   templateUrl: './crypto.component.html',
   styleUrls: ['./crypto.component.scss']
 })
-export class CryptoComponent implements OnInit {
+export class CryptoComponent {
 
   @Input() cryptoItem: cryptoItem;
 
   constructor() { }
-
-  ngOnInit(): void {
-  }
 
 }

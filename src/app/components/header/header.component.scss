@@ -1,3 +1,19 @@
+/*
+**      1. GENERAL
+**      2. MEDIA QUERIES
+**           
+**
+**
+**
+*/
+
+
+
+
+/***********************************************************************************************
+*                                       GENERAL
+************************************************************************************************/
+
 .left li, .right li,
 :host, ul, .choice,
 .left, .right,
@@ -18,18 +34,10 @@
 
 
 :host{
-    //font-size: 0.625rem;
+
     height: 5.6rem;
-    // display: flex;
-    // align-items: center;
     padding-left: 1.6rem;
 }
-
-// ul, .choice{
-//     // display: flex;
-//     align-items: center;
-// }
-
 
 .symbol,
 .ax-cr::after,
@@ -41,7 +49,7 @@
 
 .symbol, .logo-hamburger,
 .content-detail-overlay{
-    // position: absolute;
+
     display: none;
 }
 
@@ -55,12 +63,10 @@
 
 .logoItem{
     width: 12rem;
-    height: 1.5rem;
+    height: 2.5rem;
     font-size: 1.5rem;
-    // cursor: pointer;
+
 }
-
-
 
 .logoItem path{
     fill: var(--ax-color-hover);
@@ -75,32 +81,28 @@
     line-height: 2rem;
 }
 
-// .logoMenu{
-//     font-size: 14px;
-// }
-
 .choice, .left{
     flex-grow: 1;
 }
 
-// .left, .right{
-//     display: flex;
-// }
-
-// .left{
-//     flex-grow: 1;
-// }
-
 .left li, .right li{
-    // display: flex;
+
     color: var(--ax-color-primary);
     margin: 0.8rem;
-    // cursor: pointer;
 
     &:hover{
         color: var(--ax-color-hover);
     }
 
+    &:hover .tag{
+        color: var(--ax-color-primary);
+    }
+
+}
+
+.right li.href:hover{
+    color: var(--ax-color-primary);
+    background-color: var(--ax-color-hover);
 }
 
 .dropdown{
@@ -110,9 +112,9 @@
 }
 
 .menu{
-    // display: flex;
+
     margin: 0 0.8rem;
-    // cursor: pointer;
+
 }
 
 .menu svg:first-of-type{
@@ -143,33 +145,14 @@
 
 .ax-cr::after{
     content: "EUR";
-    // position: absolute;
     font-size: 1.2rem;
     padding-left: 5px;
 }
 
-// .ax-title h3{
-//     font-size: 1.4rem;
-//     line-height: 2rem;
-// }
-
 .right{
     margin-right: 0.8rem;
 
-    // & li{
-    //     font-size: 14px;
-    //     line-height: 20px;
-    // }
-
 }
-
-// .left li, .right li{
-//     position: relative;
-// }
-
-// .right li:nth-of-type(3):hover .content-detail-overlay{
-//     display: flex;
-// }
 
 .logo-theme{
     width: 1.6rem;
@@ -177,7 +160,7 @@
     color: var(--ax-color-primary);
     margin-right: 2rem;
     margin-left: 0.6rem;
-    // cursor: pointer;
+
 
 }
 
@@ -197,29 +180,24 @@
     background-color: var(--ax-bg-button);
 }
 
-
-
-
 .href{
-    // background-color: var(--ax-bg-button);
+
     border-radius: 5px;
     line-height: 2rem;
     padding: 0.6rem 1.2rem;
 }
 
 .tag{
-    // position: relative;
+
     font-size: 1rem;
     align-self: center;
     margin-left: 6px;
-    // background-color: var(--ax-bg-button);
     border-radius: 3px;
     padding: 0 0.4rem;
 }
 
 .tag::before{
     content: "";
-    // position: absolute;
     top: 50%;
     left: 0;
     border: 3px solid var(--ax-bg-button);
@@ -228,49 +206,36 @@
     z-index: -2;
 }
 
-// .currency{
-//     font-size: 14px;
-//     line-height: 20px;
-// }
-// {
-//     cursor: pointer;
-// }
-
-
-
 .currency:hover{
 
     color: var(--ax-bg-button);
-    // cursor: pointer;
+
 }
 
 .ax-title:hover .dropdown, .menu:hover .dropdown{
     transform: rotate(180deg);
-    // cursor: pointer;
 }
 
 .logo-hamburger{
     width: 2.4rem;
     height: 2.4rem;
-    // display: none;
     margin-right: 2rem;
     
 
     &:hover{
         color: var(--ax-color-hover);
-        // cursor: pointer;
+
     }
 }
 
 .right-plus{
-    // display: flex;
+
     align-items: center;
 }
 
 .content-overlay{
-    // display: flex;
+
     height: auto;
-    // position: absolute;
     top: 45px;
 
     & app-overlay{
@@ -281,11 +246,9 @@
 }
 
 .content-detail-overlay{
-    // position: absolute;
+
     top: 45px;
-    // display: none;
     flex-direction: column;
-    // align-items: center;
     width: 25rem;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     padding:1.6rem;
@@ -313,7 +276,6 @@
     & a{
         display: inline-block;
         text-align: center;
-        // text-decoration: none;
         font-size: 1.2rem;
         line-height: 1.8rem;
         background-color: var(--ax-color-hover);
@@ -327,6 +289,10 @@
 }
 
 
+/***********************************************************************************************
+*                                        MEDIA QUERIES
+************************************************************************************************/
+
 @media (max-width:1500px){
 
     .right, .right-plus{
@@ -337,13 +303,11 @@
         display: block;
     }
 
-
 }
 
 
 @media (max-width: 900px){
 
-    
     :host{
         justify-content: space-between;
     }
@@ -355,9 +319,5 @@
     .choice{
         flex-grow: initial;
     }
-
-    // .menu{
-    //     display: none;
-    // }
 
 }

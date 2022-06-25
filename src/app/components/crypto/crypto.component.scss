@@ -1,3 +1,17 @@
+/*
+**      1. GENERAL
+**      2. MEDIA QUERIES
+**           
+**
+**
+**
+*/
+
+
+/***********************************************************************************************
+*                                        GENERAL
+************************************************************************************************/
+
 :host, 
 .title,
 .price{
@@ -35,7 +49,7 @@
 }
 
 .title{
-    // display: flex;
+
     flex-grow: 13;
     max-width: 30%;
 
@@ -61,16 +75,14 @@
 }
 
 .price{
-    // display: flex;
+
     flex-grow: 17;
     max-width: 30%;
-    // justify-content: flex-start;
 
 }
 
 .variation{
     flex-grow: 9;
-    // justify-content: flex-start;
     color: rgb(207,48,74);
 
 }
@@ -81,9 +93,12 @@
 
 .cap{
     flex-grow: 7;
-    // justify-self: flex-end;
     text-align: right;
 }
+
+/***********************************************************************************************
+*                                        MEDIA QUERIES
+************************************************************************************************/
 
 @media (max-width:760px){
     .cap{
@@ -101,17 +116,11 @@
     }
     
     .price{
-        // flex-grow: 5;
-        // text-align: right;
+
         justify-content: flex-end;
 
 
     }
     
-    // .variation{
-    //     flex-grow: 5;
-    //     // text-align: right;
-
-    // }
 }
 

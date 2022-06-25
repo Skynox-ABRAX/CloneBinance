@@ -6,13 +6,11 @@ import { infoItem } from 'src/app/models/infoItem';
   templateUrl: './infos.component.html',
   styleUrls: ['./infos.component.scss']
 })
-export class InfosComponent implements OnInit {
+export class InfosComponent {
 
   @Input() infoItem: infoItem;
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
 
 }

@@ -6,7 +6,7 @@ import { footer } from 'src/app/models/resources';
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.scss']
 })
-export class FooterComponent implements OnInit {
+export class FooterComponent{
 
   footer: string;
   constructor() {
@@ -14,7 +14,5 @@ export class FooterComponent implements OnInit {
     this.footer = footer;
    }
 
-  ngOnInit(): void {
-  }
 
 }

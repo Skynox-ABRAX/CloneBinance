@@ -6,13 +6,10 @@ import { overlayItem } from 'src/app/models/overlayItem';
   templateUrl: './item-overlay.component.html',
   styleUrls: ['./item-overlay.component.scss']
 })
-export class ItemOverlayComponent implements OnInit {
+export class ItemOverlayComponent {
 
   @Input() item : overlayItem;
 
   constructor() { }
-
-  ngOnInit(): void {
-  }
 
 }

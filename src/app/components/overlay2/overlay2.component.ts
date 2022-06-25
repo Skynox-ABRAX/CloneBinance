@@ -5,17 +5,13 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
   templateUrl: './overlay2.component.html',
   styleUrls: ['./overlay2.component.scss']
 })
-export class Overlay2Component implements OnInit {
+export class Overlay2Component {
 
   
   @Output() touch= new EventEmitter();
 
   constructor() { }
 
-  ngOnInit(): void {
-
-
-  }
 
   openClose(){
 
