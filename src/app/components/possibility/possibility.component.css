@@ -17,11 +17,15 @@
 }
 
 :host, :host:hover {
+  -webkit-transition: -webkit-box-shadow 200ms ease-in;
+  transition: -webkit-box-shadow 200ms ease-in;
   transition: box-shadow 200ms ease-in;
+  transition: box-shadow 200ms ease-in, -webkit-box-shadow 200ms ease-in;
 }
 
 :host:hover {
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 img {
@@ -29,36 +33,49 @@ img {
 }
 
 .order1 {
-  order: 1;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
 }
 
 .order2 {
-  order: 2;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
 }
 
 .mediaObject,
 .possibility-plus {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .mediaObject {
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .mediaObject {
   word-wrap: break-word;
   padding: 4rem 2.4rem;
   height: 100%;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background-color: var(--ax-bg-primary);
   border-radius: 5px;
 }
+
 .mediaObject h2 {
   font-size: 2.8rem;
   font-weight: 600;
   margin-bottom: 1.6rem;
   line-height: 3.6rem;
 }
+
 .mediaObject p {
   color: var(--ax-color-accent);
   font-size: 1.6rem;
@@ -66,7 +83,9 @@ img {
 }
 
 .possibility-plus {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 2rem;
   display: none;
 }
@@ -92,11 +111,15 @@ img {
     max-width: 100%;
     padding: 16px 0;
   }
-
   .mediaObject {
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     height: auto;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .mediaObject img {
     width: 26.5rem;
@@ -109,14 +132,19 @@ img {
     font-size: 2.4rem;
     line-height: 3.2rem;
   }
-
   .possibility-plus {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
 }
+
 @media (max-width: 760px) {
   .mediaObject {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .mediaObject img {
     width: 100%;
@@ -133,3 +161,4 @@ img {
     line-height: 2rem;
   }
 }
+/*# sourceMappingURL=possibility.component.css.map */

@@ -25,11 +25,15 @@ svg {
 
 .content,
 .main-content, .overlay-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .content, .overlay-title {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 h2,
@@ -53,7 +57,10 @@ p {
 }
 
 .main-content {
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding-left: 1.6rem;
 }
 
@@ -76,10 +83,12 @@ span {
 }
 
 span::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 35%;
   left: 5%;
-  transform: translate3d(-75%, 0, 0) rotate(45deg);
+  -webkit-transform: translate3d(-75%, 0, 0) rotate(45deg);
+          transform: translate3d(-75%, 0, 0) rotate(45deg);
   border: 3px solid var(--ax-color-hover);
 }
+/*# sourceMappingURL=item-overlay.component.css.map */

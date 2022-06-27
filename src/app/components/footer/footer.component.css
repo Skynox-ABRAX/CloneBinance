@@ -14,6 +14,7 @@
   margin: 0 auto;
   max-width: 1200px;
 }
+
 :host p {
   color: var(--ax-color-secondary);
   line-height: 8.4rem;
@@ -23,3 +24,4 @@
 footer {
   text-align: center;
 }
+/*# sourceMappingURL=footer.component.css.map */

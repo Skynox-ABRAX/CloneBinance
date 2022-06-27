@@ -13,42 +13,55 @@
   display: block;
   padding: 2.4rem;
 }
+
 :host svg {
   width: 1.8rem;
   height: 1.8rem;
   color: var(--ax-color-href);
   margin-left: 0.8rem;
 }
+
 :host img {
   width: 6.4rem;
   height: 6.4rem;
 }
+
 :host a {
   color: var(--ax-color-href);
   font-size: 1.4rem;
   line-height: 2rem;
 }
+
 :host h3 {
   font-size: 2rem;
   line-height: 3.2rem;
   font-weight: 600;
 }
+
 :host p {
   margin-top: 0.8rem;
   color: var(--ax-color-secondary);
   font-size: 1.4rem;
   line-height: 2rem;
 }
+
 :host .content {
   margin-left: 2.4rem;
 }
+
 :host .link {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 1.6rem;
 }
 
 .mediaObject {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -60,15 +73,19 @@
     width: 50%;
   }
 }
+
 @media (max-width: 760px) {
   :host {
     width: 100%;
   }
-
   .mediaObject {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .mediaObject .content {
     margin-left: 0;
   }
 }
+/*# sourceMappingURL=more.component.css.map */

@@ -42,7 +42,7 @@ blockquote, q {
 
 blockquote:before, blockquote:after,
 q:before, q:after {
-  content: "";
+  content: '';
   content: none;
 }
 
@@ -65,7 +65,8 @@ button {
 }
 
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -101,11 +102,16 @@ section {
 .ax-hero-list, .mainInfos, .cryptoContent, .form-input, .form, .headerCrypto,
 .ax-title:hover app-overlay,
 .main {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .optionContent, .cryptoContent, .ax-title:hover app-overlay, .main {
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .ax-pad-background {
@@ -124,11 +130,13 @@ app-overlay {
 }
 
 .content-overlay {
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .content-overlay app-overlay {
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .ax-title:hover app-overlay {
@@ -145,3 +153,4 @@ app-overlay {
     background-image: url("/assets/img/mobile-background-image.png");
   }
 }
+/*# sourceMappingURL=styles.css.map */

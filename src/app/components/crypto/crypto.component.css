@@ -12,6 +12,8 @@
 :host,
 .title,
 .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -19,33 +21,47 @@
   height: 64px;
   padding: 16px;
   cursor: pointer;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 :host:hover {
   background-color: var(--ax-bg-primary);
 }
+
 :host img {
   width: 2.8rem;
   height: 2.8rem;
 }
+
 :host h1 {
   font-size: 1.6rem;
   line-height: 2.4rem;
 }
+
 :host .title-part {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .title {
-  flex-grow: 13;
+  -webkit-box-flex: 13;
+      -ms-flex-positive: 13;
+          flex-grow: 13;
   max-width: 30%;
 }
+
 .title h1 {
   margin-left: 1.6rem;
   margin-right: 0.8rem;
   font-size: 1.6rem;
 }
+
 .title h2 {
   color: var(--ax-color-secondary);
 }
@@ -55,16 +71,22 @@
 }
 
 .price, .variation {
-  justify-content: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .price {
-  flex-grow: 17;
+  -webkit-box-flex: 17;
+      -ms-flex-positive: 17;
+          flex-grow: 17;
   max-width: 30%;
 }
 
 .variation {
-  flex-grow: 9;
+  -webkit-box-flex: 9;
+      -ms-flex-positive: 9;
+          flex-grow: 9;
   color: #cf304a;
 }
 
@@ -73,7 +95,9 @@
 }
 
 .cap {
-  flex-grow: 7;
+  -webkit-box-flex: 7;
+      -ms-flex-positive: 7;
+          flex-grow: 7;
   text-align: right;
 }
 
@@ -84,18 +108,22 @@
   .cap {
     display: none;
   }
-
   .title {
-    flex-grow: 10;
+    -webkit-box-flex: 10;
+        -ms-flex-positive: 10;
+            flex-grow: 10;
     max-width: 50%;
   }
-
   .price, .variation {
     text-align: right;
-    flex-grow: 5;
+    -webkit-box-flex: 5;
+        -ms-flex-positive: 5;
+            flex-grow: 5;
   }
-
   .price {
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
 }
+/*# sourceMappingURL=crypto.component.css.map */
